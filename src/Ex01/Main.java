@@ -13,10 +13,10 @@ public class Main {
         ArrayList<Crianca> criancas = new ArrayList<>();
 
         do {
-
+            String nome = "";
             //System.out.println();
             System.out.print("Nome da Criança: ");
-            String nome = scan.nextLine();
+            nome = scan.nextLine();
 
             System.out.println();
             System.out.println("Foi uma criança Boazinha ou Malvada?\n[1] - Boazinha | [2] - Malvada");
@@ -30,6 +30,7 @@ public class Main {
                 System.out.println("Não recebeu Presente!!!");
             }
             criancas.add(new Crianca(nome, personalidade));
+
 
             System.out.println("Deseja cadastrar outra Criança?\n[1] - Sim | [2] - Não ");
             op = scan.nextInt();
